@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: Search for table and empty the cart.
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 31.998 s - in Search for table and empty the cart.

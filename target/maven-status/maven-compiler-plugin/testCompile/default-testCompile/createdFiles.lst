@@ -1,0 +1,10 @@
+WebPages\CartPage.class
+WebPages\TableResultPage.class
+StepDefinitions\Hooks.class
+Utilities\Constants.class
+TestRunner\TestRun.class
+Utilities\CommonMethods.class
+StepDefinitions\HomePageTest.class
+Utilities\propertiesReader.class
+StepDefinitions\TableResultPageTest.class
+WebPages\HomePage.class
