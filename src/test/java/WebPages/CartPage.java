@@ -10,7 +10,7 @@ public class CartPage extends CommonMethods {
     public WebElement emptyCart;
     @FindBy(xpath="//button[@class='btn btn-primary']")
     public WebElement confirmEmptyCartButton;
-    @FindBy(xpath="//*[@id='main']/div[3]/div/div[1]/div/div[2]/p[1]")
+    @FindBy(xpath="//div[@class='empty-cart__text']//p[1]")
     public WebElement emptyHeader;
     public CartPage(){
         PageFactory.initElements(driver,this);

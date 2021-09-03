@@ -19,10 +19,7 @@ public class TableResultPageTest extends CommonMethods {
                 boolean actual = link.getText().contains(string);
                 Assert.assertTrue(actual);
             }
-
-           // tableResultPage.nextPage.click();
        }
-
 
 
     }
@@ -32,23 +29,21 @@ public class TableResultPageTest extends CommonMethods {
         HomePage homePage = new HomePage();
         CartPage cartPage = new CartPage();
         tableResultPage.addToCart.click();
-        Thread.sleep(3000);
-        Alert alert = driver.switchTo().alert();
-        alert.accept();
-        //tableResultPage.addToCartButton.click();
-         alert =driver.switchTo().alert();
-        alert.dismiss();
-        homePage.cart.click();
+        Thread.sleep(6000);
+        click(homePage.cart);
         cartPage.emptyCart.click();
         cartPage.confirmEmptyCartButton.click();
 
     }
     @Then("verify the cart is empty")
-    public void verify_the_cart_is_empty() {
+    public void verify_the_cart_is_empty() throws InterruptedException {
         CartPage cartPage= new CartPage();
+         Thread.sleep(3000);
+
         String expectedText ="Your cart is empty.";
         String actualText=cartPage.emptyHeader.getText();
-        Assert.assertEquals(actualText,expectedText);
+        System.out.println("Actual text :"+actualText);
+        Assert.assertEquals(expectedText,actualText);
 
     }
 }

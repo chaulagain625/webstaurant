@@ -12,7 +12,7 @@ public class HomePage  extends CommonMethods {
 
     @FindBy(xpath="//button[@value='Search']")
     public WebElement searchButton;
-    @FindBy(xpath = "//span[@class='hidden xsl:inline']")
+    @FindBy(xpath = "(//a[@href='/viewcart.cfm'])[2]")
     public WebElement cart;
 
     public HomePage(){
